@@ -67,7 +67,7 @@ def run_sarimax_app(model_path):
     st.sidebar.subheader("Key Input Variables")
 
     # Interactive inputs for the most important, controllable variables.
-    capacity = st.sidebar.number_input("Effective Capacity", min_value=50, value=150)
+    capacity = st.sidebar.number_input("Effective Capacity", min_value=30, value=150)
     occupancy_lag1 = st.sidebar.slider("Occupancy (Previous Period)", min_value=0.0, max_value=200.0, value=110.0, step=1.0)
     discharge_rate = st.sidebar.slider("Discharge Rate (0.0 to 1.0)", min_value=0.0, max_value=1.0, value=0.35, step=0.01)
 
